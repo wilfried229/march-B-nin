@@ -1,0 +1,62 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Paramètres</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list radio-group>
+        <ion-list-header>
+            Mon marché Principal
+            <button id="buttonpresent" ion-button small (tap)="showRadio()">Choisir</button>
+        </ion-list-header>
+
+    </ion-list>
+
+    <ion-list radio-group>
+        <ion-list-header>
+            Alerte
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Me notifier la veille</ion-label>
+            <ion-radio checked="true" value="go"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Me notifier 2 jours avant</ion-label>
+            <ion-radio value="rust"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Me notifier le jour J</ion-label>
+            <ion-radio value="python" disabled="false"></ion-radio>
+        </ion-item>
+    </ion-list>
+    <ion-list radio-group>
+        <ion-list-header>
+            Publicité
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Activer</ion-label>
+            <ion-radio checked="true" value="go"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Désactiver</ion-label>
+            <ion-radio value="rust"></ion-radio>
+        </ion-item>
+    </ion-list>
+    <ion-card>
+        <ion-card-header>
+            A Propos
+        </ion-card-header>
+        <ion-card-content>
+            Développé par le groupe.............
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

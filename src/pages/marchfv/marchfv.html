@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+            </button>
+        <ion-title>Marché Favoris</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="img/marty-avatar.png">
+
+            </ion-avatar>
+            <h2>Akassato</h2>
+            <button id="buttonpresent" ion-button small (clik)="showDelete()">retirer</button>
+        </ion-item>
+
+        <ion-card-content>
+            <ion-col center text-center>
+                <ion-avatar item-start>
+                    <p> Aujoud'hui</p>
+                    <ion-icon ios="ios-play" md="md-play"></ion-icon>
+                </ion-avatar>
+            </ion-col>
+
+
+        </ion-card-content>
+
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="img/marty-avatar.png">
+            </ion-avatar>
+            <button id="buttonpresent" ion-button small>retirer</button>
+
+            <h2>GLO</h2>
+
+
+        </ion-item>
+
+        <ion-card-content>
+            <ion-col center text-center>
+                <ion-avatar item-start>
+                    <p> Dans 3 jours</p>
+                    <ion-icon ios="ios-play" md="md-play"></ion-icon>
+                </ion-avatar>
+            </ion-col>
+
+
+        </ion-card-content>
+
+
+    </ion-card>
+
+
+
+
+
+
+</ion-content>
