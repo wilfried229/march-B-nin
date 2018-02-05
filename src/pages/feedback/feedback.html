@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Feedback</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <form (ngSubmit)="logForm()">
+        <ion-item>
+            <h3>Vos impressions</h3>
+        </ion-item>
+
+        <ion-card>
+            <ion-label></ion-label>
+            <ion-textarea [(ngModel)]="todo.description" name="description"></ion-textarea>
+        </ion-card>
+
+        <button ion-button type="submit" block>ENVOYER</button>
+    </form>
+
+
+</ion-content>

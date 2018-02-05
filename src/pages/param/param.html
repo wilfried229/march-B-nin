@@ -8,13 +8,17 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-list radio-group>
-        <ion-list-header>
+    <ion-list>
+        <ion-item>
             Mon marché Principal
             <button id="buttonpresent" ion-button small (tap)="showRadio()">Choisir</button>
-        </ion-list-header>
+        </ion-item>
 
+        <ion-item>
+            <ion-input type="text" name="marché f" [(ngModel)]="testRadioResult"> </ion-input>
+        </ion-item>
     </ion-list>
+
 
     <ion-list radio-group>
         <ion-list-header>

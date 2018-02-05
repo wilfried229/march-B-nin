@@ -8,7 +8,7 @@ import { AlertController } from 'ionic-angular';
 })
 export class ParamPage {
     testRadioOpen: boolean;
-    testRadioResult;
+    testRadioResult: string;
   
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
@@ -21,44 +21,44 @@ export class ParamPage {
     alert.addInput({
       type: 'radio',
       label: 'Akassato',
-      value: 'blue',
-      checked: true
+      value: 'Akassato',
+      checked: false
     });
     alert.addInput({
         type: 'radio',
         label: 'Glo',
-        value: 'green',
-        checked: true
+        value: 'Glo',
+        checked: false
       });
       alert.addInput({
         type: 'radio',
         label: 'Zinvié',
-        value: 'green',
-        checked: true
+        value: 'Zinvié',
+        checked: false
       });
       alert.addInput({
         type: 'radio',
         label: 'Dantokpa',
-        value: 'green',
-        checked: true
+        value: 'Dantokpa',
+        checked: false
       });
       alert.addInput({
         type: 'radio',
         label: 'Sékou',
-        value: 'green',
-        checked: true
+        value: 'Sékou',
+        checked: false
       });
       alert.addInput({
         type: 'radio',
         label: 'VEDOKO',
-        value: 'green',
-        checked: true
+        value: 'VEDOKO',
+        checked: false
       });
       alert.addInput({
         type: 'radio',
         label: 'Cocotomey',
-        value: 'green',
-        checked: true
+        value: 'Cocotomey',
+        checked: false
       });
 
     alert.addButton('Cancel');
@@ -66,7 +66,8 @@ export class ParamPage {
       text: 'OK',
       handler: data => {
         this.testRadioOpen = false;
-        this.testRadioResult = data;
+        this.testRadioResult = data  
+        console.log(" j'ai selectionné " + this.testRadioResult);
       }
     });
     alert.present();

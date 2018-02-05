@@ -12,9 +12,9 @@ export class MarchfvPage {
 
   constructor(public navCtrl: NavController ) {
 
-  }
-   private showDelete() {
-    this.navCtrl.push(MarchfvPage);
-   }
+  }  
+
+ 
+  
 
 }

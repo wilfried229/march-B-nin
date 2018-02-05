@@ -9,7 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { MarchfvPage } from '../pages/marchfv/marchfv';
 import { ParamPage } from '../pages/param/param';
-
+import { FeedbackPage } from '../pages/feedback/feedback';
+ 
 
 @Component({
   templateUrl: 'app.html'
@@ -28,9 +29,9 @@ export class MyApp {
     this.pages = [
       { title: 'Accueil', component: HomePage },
       { title: 'Marchés Favoris', component: MarchfvPage },
-      { title: 'Les marchés', component: ListPage },
+      { title: 'Les Marchés', component: ListPage },
       { title: 'Paramètres', component: ParamPage },
-      { title: 'Feedback', component: '' },
+      { title: 'Feedback', component:FeedbackPage },
     ];
 
   }
@@ -49,4 +50,5 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+   
 }

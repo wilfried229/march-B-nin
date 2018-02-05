@@ -8,6 +8,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { MarchfvPage } from '../pages/marchfv/marchfv';
 import { ParamPage } from '../pages/param/param';
+import { FeedbackPage } from '../pages/feedback/feedback';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     MarchfvPage,
     ParamPage,
-     
+    FeedbackPage,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage,
     MarchfvPage,
     ParamPage,   
-     
+    FeedbackPage,
   ],
   providers: [
     StatusBar,
