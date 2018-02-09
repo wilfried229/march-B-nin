@@ -1,6 +1,16 @@
-page-marchfv {
-    #buttonpresent {
-        display: block;
-        margin-right: 200px;
+    page-marchfv {
+        ion-buttons {
+            margin: 2px 15.2rem;
+            display: block;
+            top: -22px;
+        }
+        ion-col {
+            font-size: 2.4rem;
+            line-height: 1.5;
+        }
+        ion-avatar {
+            display: block;
+            line-height: 1;
+            background-color: #efeffa;
+        }
     }
-}

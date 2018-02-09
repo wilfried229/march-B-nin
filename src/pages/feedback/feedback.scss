@@ -3,14 +3,17 @@
             display: block;
             clear: both;
             width: 28%;
+            margin-left: 115px;
+            margin-right: 0;
         }
         ion-card.card {
             width: 269px;
             height: 256px;
             margin: 30px;
         }
-        .button-block {
-            margin-left: 115px;
-            margin-right: 0;
+        .text-input-md {
+            margin: 14px 8px;
+            padding: 4px;
+            width: calc(100% - 8px - 8px);
         }
     }

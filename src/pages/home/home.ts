@@ -18,7 +18,7 @@ export class HomePage {
       buttons: [
         {
           text: 'Ajouter aux favoris',
-          role: 'Favoris',
+          role: 'Favorite',
           handler: () => {
             console.log('Destructive clicked');
           }
