@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ActionSheetController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { ActionSheetController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController) {
+  constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController,public toastCtrl: ToastController) {
 
   }
   presentActionSheet() {
@@ -37,5 +38,13 @@ export class HomePage {
       ]
     });
     actionSheet.present();
+  }
+
+  showToast() {
+    let toast = this.toastCtrl.create({
+      message: ' Pécédemment 15 février 2015',
+      duration: 3000
+    });
+    toast.present();
   }
 }
