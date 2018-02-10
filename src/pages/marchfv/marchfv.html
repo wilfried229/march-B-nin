@@ -1,10 +1,14 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-            </button>
-        <ion-title>Marché Favoris</ion-title>
-    </ion-navbar>
+    <ion-toolbar color="dark">
+        <ion-navbar>
+            <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+                </button>
+            <ion-title>Marché Favoris</ion-title>
+        </ion-navbar>
+
+    </ion-toolbar>
+
 </ion-header>
 
 <ion-content padding>
@@ -12,19 +16,21 @@
 
         <ion-item>
 
-            <h2>Akassato</h2>
-            <ion-buttons start>
-                <button id="buttonpresent" ion-button small>retirer</button>
-            </ion-buttons>
+            <span text-left>Akassato</span>
+
+            <button ion-button small text-left>retirer</button>
+
         </ion-item>
 
         <ion-card-content>
-            <ion-col center text-center>
-                <ion-avatar item-start>
-                    <p> Aujoud'hui</p>
-                    <ion-icon ios="ios-play" md="md-play"></ion-icon>
-                </ion-avatar>
-            </ion-col>
+            <div class="padding">
+                <ion-col center text-center>
+                    <ion-avatar item-start>
+                        <p> Aujoud'hui</p>
+                        <ion-icon ios="ios-play" md="md-play"></ion-icon>
+                    </ion-avatar>
+                </ion-col>
+            </div>
 
 
         </ion-card-content>
@@ -42,12 +48,14 @@
         </ion-item>
 
         <ion-card-content>
-            <ion-col center text-center>
-                <ion-avatar item-start>
-                    <p> Dans 3 jours</p>
-                    <ion-icon ios="ios-play" md="md-play"></ion-icon>
-                </ion-avatar>
-            </ion-col>
+            <div class="padding">
+                <ion-col center text-center>
+                    <ion-avatar item-start>
+                        <p> Dans 3 jours</p>
+                        <ion-icon ios="ios-play" md="md-play"></ion-icon>
+                    </ion-avatar>
+                </ion-col>
+            </div>
 
 
         </ion-card-content>

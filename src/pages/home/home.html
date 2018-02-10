@@ -23,18 +23,28 @@
 
         </ion-card-header>
         <ion-card-content>
-            <ion-item>
-                <span item-center> Dans 2 jours</span>
-                <button ion-button color="secondary" outline>
-                            Ecouter
-                                <ion-icon name="play"></ion-icon>
-                          </button>
+
+            <ion-slides page>
+                <ion-slide style="background-color: #DBEBDB">
+                    <span item-center> Dans 2 jours</span>
+                    <button ion-button color="secondary" outline>
+                                    Ecouter
+                                        <ion-icon name="play"></ion-icon>
+                                  </button>
+
+                </ion-slide>
+
+                <ion-slide style="background-color: #DBEBDB">
+                    <span item-center> Dans 2 jours</span>
+                    <button ion-button color="secondary" outline>
+                                    Ecouter
+                                        <ion-icon name="play"></ion-icon>
+                                  </button>
+
+                </ion-slide>
 
 
-            </ion-item>
-
-            <ion-icon name="arrow-dropleft" (click)="showToast('middle')"></ion-icon>
-            <ion-icon name="arrow-dropright"> </ion-icon>
+            </ion-slides>
         </ion-card-content>
     </ion-card>
     <ion-card>

@@ -11,6 +11,16 @@
         ion-avatar {
             display: block;
             line-height: 1;
-            background-color: #efeffa;
+            color: white;
+        }
+        .padding {
+            border-radius: 80px;
+            background-color: orangered;
+            color: white;
+            font-size: x-large;
+        }
+        .card-md p {
+            color: #f9f1f1;
+            font-size: large;
         }
     }

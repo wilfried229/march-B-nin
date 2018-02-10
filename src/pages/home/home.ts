@@ -9,7 +9,7 @@ import { ToastController } from 'ionic-angular';
   templateUrl: 'home.html',
 })
 export class HomePage {
-
+  arrowdropright: string = "arrow-dropright" 
   constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController,public toastCtrl: ToastController) {
 
   }
