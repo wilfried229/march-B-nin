@@ -1,17 +1,21 @@
 <ion-header>
-    <ion-navbar>
-        <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Paramètres</ion-title>
-    </ion-navbar>
+    <ion-toolbar color="secondary">
+        <ion-navbar>
+            <button ion-button menuToggle>
+                    <ion-icon name="menu"></ion-icon>
+                    </button>
+            <ion-title>Paramètres</ion-title>
+        </ion-navbar>
+
+    </ion-toolbar>
+
 </ion-header>
 
 <ion-content padding>
     <ion-list no-lines>
         <ion-item>
             Mon marché Principal
-            <button id="buttonpresent" ion-button small (tap)="showRadio()">Choisir</button>
+            <button ion-button small text-left (tap)="showRadio()">Choisir</button>
         </ion-item>
 
         <ion-item>

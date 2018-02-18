@@ -1,17 +1,19 @@
 <ion-header>
-    <ion-navbar>
+    <ion-toolbar color="secondary">
+        <ion-navbar>
+            <button ion-button menuToggle>
+                    <ion-icon name="menu"></ion-icon>
+                    </button>
+            <ion-title>Marché Akassato</ion-title>
+            <ion-buttons end>
+                <button ion-button icon-only (tap)="presentActionSheet()">
+                            <ion-icon ios="ios-more" md="md-more"></ion-icon>
+                        </button>
+            </ion-buttons>
+        </ion-navbar>
 
-        <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Marché Akassato</ion-title>
-        <ion-buttons start>
-            <button ion-button icon-only (tap)="presentActionSheet()">
-                    <ion-icon ios="ios-more" md="md-more"></ion-icon>
-                </button>
-        </ion-buttons>
+    </ion-toolbar>
 
-    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
@@ -22,31 +24,43 @@
             Partie de la description
 
         </ion-card-header>
-        <ion-card-content>
-
-            <ion-slides page>
-                <ion-slide style="background-color: #DBEBDB">
-                    <span item-center> Dans 2 jours</span>
-                    <button ion-button color="secondary" outline>
-                                    Ecouter
-                                        <ion-icon name="play"></ion-icon>
-                                  </button>
-
-                </ion-slide>
-
-                <ion-slide style="background-color: #DBEBDB">
-                    <span item-center> Dans 2 jours</span>
-                    <button ion-button color="secondary" outline>
-                                    Ecouter
-                                        <ion-icon name="play"></ion-icon>
-                                  </button>
-
-                </ion-slide>
-
-
-            </ion-slides>
-        </ion-card-content>
     </ion-card>
+
+
+    <ion-slides pager>
+
+        <ion-slide style="background-color: #F7F4F4">
+            <div class="padding">
+                <ion-col center text-center>
+                    <ion-avatar item-start>
+                        <p> Dans 3 jours</p>
+                        <button ion-button color="secondary" outline>
+                            Ecouter
+                                <ion-icon name="play"></ion-icon>
+                          </button>
+                    </ion-avatar>
+                </ion-col>
+            </div>
+            <p>Précédemment 15 fevrier 2018</p>
+        </ion-slide>
+
+        <ion-slide style="background-color: #F7F4F4">
+            <div class="padding">
+                <ion-col center text-center>
+                    <ion-avatar item-start>
+                        <p> Dans 3 jours</p>
+                        <button ion-button color="secondary" outline>
+                                    Ecouter
+                                        <ion-icon name="play"></ion-icon>
+                                  </button>
+                    </ion-avatar>
+                </ion-col>
+            </div>
+            <p>Prochainement 17 fevrier 2018</p>
+        </ion-slide>
+
+    </ion-slides>
+
     <ion-card>
         Espace publicitaires
     </ion-card>

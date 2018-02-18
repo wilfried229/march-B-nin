@@ -9,7 +9,7 @@ import { ToastController } from 'ionic-angular';
   templateUrl: 'home.html',
 })
 export class HomePage {
-  arrowdropright: string = "arrow-dropright" 
+    
   constructor(public navCtrl: NavController,public actionSheetCtrl: ActionSheetController,public toastCtrl: ToastController) {
 
   }
@@ -40,11 +40,5 @@ export class HomePage {
     actionSheet.present();
   }
 
-  showToast() {
-    let toast = this.toastCtrl.create({
-      message: ' Pécédemment 15 février 2015',
-      duration: 3000
-    });
-    toast.present();
-  }
+   
 }
