@@ -14,4 +14,11 @@ page-list {
         color: white;
         font-size: 15px;
     }
+    .segment-md .segment-button.segment-activated {
+        border-color: greenyellow;
+        border-radius: 10px;
+    }
+    .swiper-pagination-bullet-active {
+        background: #65ab34;
+    }
 }

@@ -29,4 +29,14 @@ page-home {
         padding-inline-start: 32px;
         padding-inline-end: 30px;
     }
+    .button-outline-md-secondary {
+        color: #f0f9f3;
+        font-size: small;
+        border-width: 4px;
+        border-radius: 10px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        padding: 10px;
+        background-color: green;
+    }
 }
